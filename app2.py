@@ -121,8 +121,8 @@ if "content" not in st.session_state:
 # Extract content based on user selection
 if input_type == "YouTube Video":
     youtube_link = st.text_input("Enter YouTube Video Link:")
+    st.warning("Ensure Transcript or Captions are on!")
     if youtube_link:
-        st.warning("Ensure Transcript or Captions are on!")
         video_id = youtube_link.split("=")[1]
         st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_column_width=True)
 
