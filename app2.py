@@ -106,7 +106,7 @@ def text_to_audio(text):
 
 
 # Streamlit UI
-st.title("Summarizer: YouTube, Website, or PDF")
+st.title("😎 My Content Summarizer: YouTube, Website, or PDF")
 name = st.text_input("What's your name?")
 
 # Radio button to select input type
